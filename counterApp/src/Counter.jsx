@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import product, {sum} from "./UnderstandExport"
+
 class Counter extends Component {
   constructor(props) {
     super(props);
@@ -30,6 +32,8 @@ class Counter extends Component {
   };
 
   render() {
+    console.log(sum(5,3));
+    console.log(product(5,3));
     return (
       <div>
         <h2>Counter Component</h2>
